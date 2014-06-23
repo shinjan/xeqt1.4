@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+font-family: Interstate;
+src:url(Interstate%20Black.ttf);
+}
+@font-face
+{
+font-family: Gothic;
+src:url(LeagueGothic-Regular.otf);
+}
+body{
+	margin:0;
+	padding:0;
+	background-color:white;
+}
+#logo{
+	font-family:Gothic, Arial, Helvetica, sans-serif;
+	font-size:50px;
+	color:white;
+	margin:10px 10px 10px 50px;
+	position:absolute;
+}
+
+#front{
+	width:100%;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	color:#eee;
+	background-color:#3C948B;
+	padding:0;
+	margin:0;
+	position:relative;
+	padding-top:70px;
+}
+#front blockquote{
+	text-align:center;
+}
+#share{
+	display:block;
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+}
+.social{
+	width:55px;
+	height:55px;
+	display:inline-block;
+	border: 5px solid #036;
+}
+
+#hello{
+	width:100%;
+	height:400px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:white;
+	text-align:center;
+	position:relative;
+}
+
+#hello h1{
+	position:absolute;
+	display:block;
+	top:20%;
+	font-size:36px;
+	text-align:center;
+	width:100%;
+}
+#hello p{
+	width:80%;
+	font-size:18px;
+			text-align:center;
+	top:50%;
+	position:absolute;
+	display:block;
+	margin:0 10% 0 10%;
+
+}

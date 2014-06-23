@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+<title>XeQt|Home</title>
+<link href="menu.css" type="text/css" rel="stylesheet"/>
+<link href="main.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<nav class="clearfix">  
+	
+    <ul class="clearfix">  
+        <li><a href="#">Hello</a></li>  
+        <li><a href="#">Our Vision</a></li>  
+        <li><a href="#">Our Stuff</a></li>  
+        <li><a href="#">Why XeQt?</a></li>  
+        <li><a href="#">Contact Us</a></li>    
+    </ul>  
+    <span id="logo">XeQt</span>
+	<div style="padding-top:20px">
+    <a href="#" id="pull">Menu</a>  </div>
+</nav>  
+
+<section id="front">
+
+<blockquote>Do More With Less</blockquote>
+<div id="share">
+<a href=# class="social" style="background-image:url(images/facebook-icon.png)"></a>
+<a href=# class="social" style="background-image:url(images/linkedin-icon.png)"></a>
+<a href=# class="social" style="background-image:url(images/google-plus-icon.png)"></a>
+</div>
+</section>
+
+<section id="hello">
+<h1>Hello</h1>
+<p>
+XeQt is a group of 2nd generation technology developers whose motto, "Do More With Less" drives every decision, design and deployment mechanism of a group of highly skilled engineers. XeQt is based in and operates from Kolkata, India. We are strong promoters of open-source technology, minimalistic designs and the belief that great isn't good enough. With XeQt, you can always expect to be surprised.
+</p>
+
+</section>
+
+
+
+
+<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('nav ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});  
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 800 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});  
+
+ var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+  $(document).ready(function() {
+  $('#front').height(0.8*h);
+  });
+</script>
+</body>
+</html>
