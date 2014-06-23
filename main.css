@@ -141,3 +141,17 @@ body{
 	text-align:center;
 	width:100%;
 }
+.contact-elements{
+	width:50%;
+	display:inline-block;
+	top:20%;
+	float:left;
+	height:200px;
+	padding-top:15%;
+}
+#call li{
+	list-style-type:none;
+}
+#call{
+	text-align:left;
+}
