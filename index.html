@@ -13,7 +13,7 @@
     <ul class="clearfix">  
         <li><a href="#hello">Hello</a></li>  
         <li><a href="#vision">Our Vision</a></li>  
-        <li><a href="#">Our Stuff</a></li>  
+        <li><a href="#stuff">Our Stuff</a></li>  
         <li><a href="#">Why XeQt?</a></li>  
         <li><a href="#contact">Contact Us</a></li>    
     </ul>  
@@ -32,22 +32,64 @@
 </div>
 </section>
 
-<section id="hello">
-<h1>Hello</h1>
+<section id="hello" class="content">
+<h1 class="heading">Hello</h1>
 <p>
 XeQt is a group of 2nd generation technology developers whose motto, "Do More With Less" drives every decision, design and deployment mechanism of a group of highly skilled engineers. XeQt is based in and operates from Kolkata, India. We are strong promoters of open-source technology, minimalistic designs and the belief that great isn't good enough. With XeQt, you can always expect to be surprised.
 </p>
 
 </section>
-<section id="vision">
-<h1>Our Vision</h1>
+<section id="vision" class="content">
+<h1 class="heading">Our Vision</h1>
 <p>
  A couple of years back, two students, sitting through a boring class at college, had an idea that would be both fun and innovative, and would also shape their lives in the days to come. And XeQt was born out of that idea. From a web design startup, today we have branched into core hardware development, app development, software design, tutorials, social media and marketing and have even bigger plans in the days to come. It is really very exciting, and we can hardly wait to get started.
 </p>
 </section>
 
-<section id="contact">
-<h1>Reach Out to Us</h1>
+<section class="content" id="stuff">
+<h1 class="heading">Our Stuff</h1>
+<div id="stage">
+  <img class="frames" src="images/renderbit.svg" onclick="window.open('http://www.renderbit.com')"></img>
+  <img class="frames" src="images/cryllsoft.png" onclick="window.open('http://www.cryllsoft.com')"></img>
+ 
+  <img class="frames" src="images/geeky.svg" onclick="window.open('http://www.geekyhardware.com')"></img>
+  <img class="frames" src="images/techdcode.svg" onclick="window.open('http://www.techdcode.com')"></img>
+  </div>
+</section>
+
+<section id="team" class="content">
+		<h2 class="heading">Meet the team</h2>
+        <div id="wrapper">
+			<div class="large-4 columns">
+				<img src="images/soham.jpg" alt="Soham Banerjee">
+				<p class="team-member"><a data-popup="" data-target="#daniel" href="#"><strong>Soham Banerjee</strong><br>Chief Executive Officer<span> &gt; </span></a></p>
+			</div>
+			<div class="large-4 columns">
+				<img src="images/shinjan.jpg" alt="Shinjan Mitra">
+				<p class="team-member"><a data-popup="" data-target="#tanu" href="#"><strong>Shinjan Mitra</strong><br>Chief Technical Officer (Web Design)<span> &gt; </span></a></p>
+			</div>
+			<div class="large-4 columns">
+				<img src="images/shashwata.jpg" alt="Shashwata Gupta">
+				<p class="team-member"><a data-popup="" data-target="#jonas" href="#"><strong>Shashwata Gupta</strong><br>Chief Technical Officer (Tutorials)<span> &gt; </span></a></p>
+			</div>
+
+			<div class="large-4 columns">
+				<img src="images/diptesh.jpg" alt="Diptesh Sil">
+				<p class="team-member"><a data-popup="" data-target="#daniel" href="#"><strong>Diptesh Sil</strong><br>Chief Technical Officer (Software)<span> &gt; </span></a></p>
+			</div>
+			<div class="large-4 columns">
+				<img src="images/susmit.jpg" alt="Susmit Bhattacharya">
+				<p class="team-member"><a data-popup="" data-target="#tanu" href="#"><strong>Susmit Bhattacharya</strong><br>Chief Technical Officer (Hardware)<span> &gt; </span></a></p>
+			</div>
+			<div class="large-4 columns">
+				<img src="" alt="Anirban Sinha">
+				<p class="team-member"><a data-popup="" data-target="#jonas" href="#"><strong>Anirban Sinha</strong><br>Chief Marketing Officer<span> &gt; </span></a></p>
+			</div>
+	</div>
+</section>
+
+<section id="contact" class="content">
+<h1 class="heading">Reach Out to Us</h1>
 <div id="map" class="contact-elements">
 <iframe id="map" data-start="transform:scale(0.01); left:60%; opacity:0; top:5%" data-200-end="transform:scale(0.01); left:60%; opacity:0; top:5%" data-end="transform:scale(1); left:30%; opacity:1; top:50%;"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.6452920865713!2d88.379239!3d22.5174878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276ccaf7b43ff%3A0x66b265603f9ad3cd!2sBanku+Bihari+Chatterjee+Rd%2C+Kasba!5e0!3m2!1sen!2sin!4v1403467832272" width="500" height="300" frameborder="0" style="border:0"></iframe>
 </div>
@@ -57,9 +99,7 @@ XeQt is a group of 2nd generation technology developers whose motto, "Do More Wi
 	<li><strong>Call Us</strong><br>(+91) 9475484561 <br>(+91) 9477522691 <br></li><br>
 	<li><strong>Call Us </strong><br>contact@xeqt.in</li><br>
 </ul>
-
 </div>
-
 </section>
 
 <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
@@ -89,7 +129,7 @@ $(window).resize(function(){
   $('#contact').height(h);
   });
   
-  $('a').click(function(){
+  $('a').not('#pull').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
