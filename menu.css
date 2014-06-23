@@ -13,16 +13,18 @@
 
 /* Basic Styles */
 body {
-	background-color: #ece8e5;
+	background-color: white;
 }
 nav {
+	position:fixed;
+	z-index:2;
+	top:0;
 	height:70px;
 	width: 100%;
 	background: #111;
 	font-size: 11pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
-	position: relative;
 	border-bottom: 2px solid #283744;
 }
 nav ul {
@@ -61,9 +63,10 @@ nav li a {
 nav li:last-child a {
 	border-right: 0;
 }
+/*
 nav a:hover, nav a:active {
 	background-color: #8c99a4;
-}
+}*/
 nav a#pull {
 	display: none;
 }

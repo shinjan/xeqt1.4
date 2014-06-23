@@ -11,11 +11,11 @@
 <nav class="clearfix">  
 	
     <ul class="clearfix">  
-        <li><a href="#">Hello</a></li>  
-        <li><a href="#">Our Vision</a></li>  
+        <li><a href="#hello">Hello</a></li>  
+        <li><a href="#vision">Our Vision</a></li>  
         <li><a href="#">Our Stuff</a></li>  
         <li><a href="#">Why XeQt?</a></li>  
-        <li><a href="#">Contact Us</a></li>    
+        <li><a href="#contact">Contact Us</a></li>    
     </ul>  
     <span id="logo">XeQt</span>
 	<div style="padding-top:20px">
@@ -39,9 +39,18 @@ XeQt is a group of 2nd generation technology developers whose motto, "Do More Wi
 </p>
 
 </section>
+<section id="vision">
+<h1>Our Vision</h1>
+<p>
+ A couple of years back, two students, sitting through a boring class at college, had an idea that would be both fun and innovative, and would also shape their lives in the days to come. And XeQt was born out of that idea. From a web design startup, today we have branched into core hardware development, app development, software design, tutorials, social media and marketing and have even bigger plans in the days to come. It is really very exciting, and we can hardly wait to get started.
+</p>
+</section>
+
+<section id="contact">
+<h1>Reach Out to Us</h1>
 
 
-
+</section>
 
 <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -65,8 +74,17 @@ $(window).resize(function(){
  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
   $(document).ready(function() {
-  $('#front').height(0.8*h);
+  $('#front').height(h);
+  $('#vision').height(h);
+  $('#contact').height(h);
   });
+  
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
 </script>
 </body>
 </html>

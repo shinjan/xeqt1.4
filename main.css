@@ -72,11 +72,72 @@ body{
 }
 #hello p{
 	width:80%;
-	font-size:18px;
+	font-size:24px;
 			text-align:center;
 	top:50%;
 	position:absolute;
 	display:block;
 	margin:0 10% 0 10%;
 
+}
+#vision{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-size:cover;
+    background-image: linear-gradient(to bottom, rgba(8, 138, 104, 0.6), rgba(8,138,104, 0.6)), url("images/bridge.jpg");
+    background-image: -moz-linear-gradient(to bottom, rgba(8, 138, 104, 0.6), rgba(8,138,104, 0.6)), url("images/bridge.jpg");
+    background-image: -o-linear-gradient(to bottom, rgba(8, 138, 104, 0.6), rgba(8,138,104, 0.6)), url("images/bridge.jpg");
+    background-image: -ms-linear-gradient(to bottom, rgba(8, 138, 104, 0.6), rgba(8,138,104, 0.6)), url("images/bridge.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 138, 104, 0.6)), to(rgba(8, 138, 104, 0.6))), url("images/bridge.jpg");
+    background-image: -webkit-linear-gradient(to bottom, rgba(8, 138, 104, 0.6), rgba(8,138,104, 0.6)), url("images/bridge.jpg");
+	
+	text-align:center;
+	position:relative;
+	color:white;
+	padding:0;
+	margin:0;
+}
+#vision h1{
+	position:absolute;
+	display:block;
+	top:10%;
+	font-size:36px;
+	text-align:center;
+	width:100%;
+}
+#vision p{
+	width:80%;
+	font-size:24px;
+			text-align:center;
+	top:30%;
+	position:absolute;
+	display:block;
+	margin:0 10% 0 10%;
+
+}
+
+#contact{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-size:cover;
+    background-image: linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -moz-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -o-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -ms-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(76,11,95, 0.6)), to(rgba(76,11,95, 0.6))), url("images/bridge.jpg");
+    background-image: -webkit-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge.jpg");
+	
+	text-align:center;
+	position:relative;
+	color:white;
+	padding:0;
+	margin:0;
+}
+#contact h1{
+	position:absolute;
+	display:block;
+	top:10%;
+	font-size:36px;
+	text-align:center;
+	width:100%;
 }
