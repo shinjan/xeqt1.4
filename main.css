@@ -15,12 +15,31 @@ body{
 	padding:0;
 	background-color:white;
 }
+br{
+	height:0;
+}
 #logo{
 	font-family:Gothic, Arial, Helvetica, sans-serif;
 	font-size:50px;
 	color:white;
 	margin:10px 10px 10px 50px;
 	position:absolute;
+}
+.content{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:white;
+	background-size:cover;
+	color:white;
+	padding:0;
+	margin:0;
+}
+.heading{
+	padding-top:50px;
+	padding-bottom:20px;
+	font-size:36px;
+	text-align:center;
+	width:100%;
 }
 
 #front{
@@ -39,16 +58,11 @@ body{
 		width:80%;
 	font-size:40px;
 			text-align:center;
-	top:30%;
-	position:absolute;
-	display:block;
-	margin:0 10% 0 10%;
+	margin:100px 10% 0 10%;
 
 }
 #share{
-	display:block;
-	position:absolute;
-	top:50%;
+	padding-top:100px;
 	width:100%;
 	text-align:center;
 	margin:0 auto;
@@ -59,42 +73,21 @@ body{
 	display:inline-block;
 	border: 5px solid #036;
 }
-.content{
-	width:100%;
-	font-family:Arial, Helvetica, sans-serif;
-	background-color:white;
-	text-align:center;
-	position:relative;
-	background-size:cover;
-	color:white;
-	padding:0;
-	margin:0;
-}
 
 #hello{
 	min-height:400px;
-	height:auto;
 	color:black;
-}
-.heading{
-		position:absolute;
-	display:block;
-	top:10%;
-	font-size:36px;
-	text-align:center;
-	width:100%;
 }
 
 #hello p{
 	width:80%;
 	font-size:24px;
 			text-align:center;
-	top:50%;
-	position:absolute;
-	display:block;
 	margin:0 10% 0 10%;
 
 }
+
+
 #vision{
     background-image: linear-gradient(to bottom, rgba(121, 180, 198, 0.6), rgba(121, 180, 198, 0.6)), url("images/bridge3.jpg");
     background-image: -moz-linear-gradient(to bottom,rgba(121, 180, 198, 0.6), rgba(121, 180, 198, 0.6)), url("images/bridge3.jpg");
@@ -103,13 +96,10 @@ body{
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 180, 198, 0.6)), to(rgba(121, 180, 198, 0.6))), url("images/bridge3.jpg");
     background-image: -webkit-linear-gradient(to bottom, rgba(121, 180, 198, 0.6), rgba(56, 160, 190, 0.6)), url("images/bridge3.jpg");
 }
-
 #vision p{
 	width:80%;
 	font-size:24px;
-			text-align:center;
-	top:30%;
-	position:absolute;
+	text-align:center;
 	display:block;
 	margin:0 10% 0 10%;
 
@@ -130,38 +120,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153b64', end
 
 }
 
-#contact{
-    background-image: linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
-    background-image: -moz-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
-    background-image: -o-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
-    background-image: -ms-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(76,11,95, 0.6)), to(rgba(76,11,95, 0.6))), url("images/bridge.jpg");
-    background-image: -webkit-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge.jpg");
-
-}
-
-.contact-elements{
-	width:50%;
-	display:inline-block;
-	top:20%;
-	float:left;
-	height:200px;
-	padding-top:15%;
-}
-
-#call li{
-    text-align: left;
-	list-style-type:none;
-}
-#call{
-	text-align:left;
-}
-
-#map1{
-    width: 70%;
-    height: 150%;
-}
-
  div#stage{ perspective: 1000px; 
  -moz-perspective: 1000px; 
  -webkit-perspective: 1000px; 
@@ -172,8 +130,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153b64', end
  -ms-perspective-origin: 60%;
  perspective-origin: 60%;
  padding-left:10%;
- position:absolute;
- top:40%;
 
  } 
  
@@ -225,7 +181,26 @@ transition-property: transform;
  -ms-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1); 
  
  } 
- 
+ #team-wrapper{
+	padding-bottom:100px;
+ }
+ .columns{
+	 display:inline-block;
+	 float:left;
+	 padding:0 20px  0 20px;
+ }
+ .team-member{
+	 background-color:white;
+	 padding:20px;
+	 margin:0;
+
+ }
+ .team-member a{
+	 	 text-decoration:none;
+	 color:black;
+	 font-size:16px;
+ }
+  
  .columns img{
 	 height:270px;
 	 width:340px;
@@ -241,38 +216,57 @@ transition-property: transform;
     /*background: -ms-linear-gradient(top,   #0e2e45 42%, #1e2c38 64%, #141d2a 100%); /* IE10+ */
   /*  background: linear-gradient(to bottom,   #0e2e45 42%, #1e2c38 64%, #141d2a 100%); /* W3C */
 /*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e2e45', endColorstr='#1e2c38',GradientType=0 ); /* IE6-9 */
-	 min-height:1000px;
-     max-height: none;
-	 display:inherit;
- }
+	
+	  }
  #team h2{
 	 margin:0;
      color: #000000;
  }
  
- #wrapper{
-	 position:absolute;
-	 top:20%;
-     bottom: 10%;
+#contact{
+    background-image: linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -moz-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -o-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -ms-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(76,11,95, 0.6)), to(rgba(76,11,95, 0.6))), url("images/bridge.jpg");
+    background-image: -webkit-linear-gradient(to bottom, rgba(76, 11, 95, 0.6), rgba(76,11,95, 0.6)), url("images/bridge.jpg");
+
+}
+
+.contact-elements{
+	display:inline-block;
+	padding-top:20px;
+	float:left;
+	height:300px;
+	width:50%;
+}
+
+#call li{
+    text-align: left;
+	list-style-type:none;
+}
+#call{
+	text-align:left;
+}
+
+#map1{
+    width: 70%;
+    height: 100%;
+	margin-left:100px;
+}
+ #contact-wrapper{
+
 	 width:100%;
 	 margin:0;
-	 text-align:center;
- }
-
- .columns{
-	 display:inline-block;
-	 float:left;
-	 padding:0 20px  0 20px;
- }
- .team-member{
-	 background-color:white;
-	 padding:20px;
-	 margin:0;
 
  }
- .team-member a{
-	 	 text-decoration:none;
-	 color:black;
-	 
-	 font-size:16px;
- }
+@media screen and (max-width: 800px) {
+	.contact-elements{
+		width:300px;
+		display:block;
+	
+	}
+	#contact{
+		height:1000px;
+	}
+}
