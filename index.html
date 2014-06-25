@@ -7,6 +7,7 @@
 <link href="main.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
 <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <li><a href="#hello">Hello</a></li>  
         <li><a href="#vision">Our Vision</a></li>  
         <li><a href="#stuff">Our Stuff</a></li>  
-        <li><a href="#">Why XeQt?</a></li>  
+        <li><a href="#team">The Team</a></li>  
         <li><a href="#contact">Contact Us</a></li>    
     </ul>  
     <span id="logo">XeQt</span>
@@ -35,24 +36,24 @@
 </section>
 
 <section id="hello" class="content">
-<h1 class="heading">Hello</h1>
+<h2 class="heading">Hello</h2>
 <p>
 XeQt is a group of 2nd generation technology developers whose motto, "Do More With Less" drives every decision, design and deployment mechanism of a group of highly skilled engineers. XeQt is based in and operates from Kolkata, India. We are strong promoters of open-source technology, minimalistic designs and the belief that great isn't good enough. With XeQt, you can always expect to be surprised.
 </p>
 </section>
 <section id="vision" class="content">
-<h1 class="heading">Our Vision</h1>
+<h2 class="heading">Our Vision</h2>
 <p>
  A couple of years back, two students, sitting through a boring class at college, had an idea that would be both fun and innovative, and would also shape their lives in the days to come. And XeQt was born out of that idea. From a web design startup, today we have branched into core hardware development, app development, software design, tutorials, social media and marketing and have even bigger plans in the days to come. It is really very exciting, and we can hardly wait to get started.
 </p>
 </section>
 
 <section class="content" id="stuff">
-<h1 class="heading">Our Stuff</h1>
+<h2 class="heading">Our Stuff</h2>
 <div id="stage">
   <img class="frames" src="images/renderbit.svg" onclick="window.open('http://www.renderbit.com')"></img>
   <img class="frames" src="images/cryllsoft.png" onclick="window.open('http://www.cryllsoft.com')"></img>
- 
+ <br />
   <img class="frames" src="images/geeky.svg" onclick="window.open('http://www.geekyhardware.com')"></img>
   <img class="frames" src="images/techdcode.svg" onclick="window.open('http://www.techdcode.com')"></img>
   </div>
@@ -121,7 +122,7 @@ XeQt is a group of 2nd generation technology developers whose motto, "Do More Wi
 </section>
 
 <section id="contact" class="content">
-    <h1 class="heading">Reach Out to Us</h1>
+    <h2 class="heading">Reach Out to Us</h2>
     <div id="contact-wrapper">
     <div id="map" class="contact-elements">
         <iframe id="map1"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.6452920865713!2d88.379239!3d22.5174878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276ccaf7b43ff%3A0x66b265603f9ad3cd!2sBanku+Bihari+Chatterjee+Rd%2C+Kasba!5e0!3m2!1sen!2sin!4v1403467832272" frameborder="0" style="border:0";></iframe>
@@ -153,6 +154,17 @@ $(window).resize(function(){
     if(w > 800 && menu.is(':hidden')) {  
         menu.removeAttr('style');  
     }  
+	
+	//stuff resizing
+	   var w = $(window).width(); 
+   var fh=0;
+   $('.frames').each(function() {
+    fh+=$(this).height();
+});; 
+   if(w>600)
+	   $('#stuff').height(fh/2+500);
+	  else
+	   $('#stuff').height(fh+500);
 });  
 
  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -162,7 +174,20 @@ $(window).resize(function(){
   $('#vision').css("min-height",h);
   $('#contact').css("min-height",h);
    $("#team-wrapper").owlCarousel();
+   
+   
+   //stuff resizing
+   var w = $(window).width(); 
+   var fh=0;
+   $('.frames').each(function() {
+    fh+=$(this).height();
+});; 
+   if(w>600)
+	   $('#stuff').height(fh/2+500);
+	  else
+	   $('#stuff').height(fh+500);
   });
+  
   
   $('a').not('#pull').click(function(){
     $('html, body').animate({
