@@ -33,10 +33,11 @@ br{
 	color:white;
 	padding:0;
 	margin:0;
+	position:fixed;
 }
 .heading{
 	margin:0;
-	padding-top:50px;
+	padding-top:100px;
 	padding-bottom:20px;
 	font-size:36px;
 	text-align:center;
@@ -72,12 +73,14 @@ br{
 	width:55px;
 	height:55px;
 	display:inline-block;
+	top:400px;
 	border: 5px solid #036;
 }
 
 #hello{
 	min-height:400px;
 	color:black;
+	z-index:2;
 }
 
 #hello p{
@@ -107,7 +110,7 @@ br{
 
 #stuff{
 
-
+z-index:2;
 background-color:#3C948B;
 }
 
@@ -272,7 +275,7 @@ transition-property: transform;
 #map1{
     width: 70%;
     height: 100%;
-	margin-left:100px;
+	margin-left:10%;
 }
  #contact-wrapper{
 

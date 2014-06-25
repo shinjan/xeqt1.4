@@ -14,83 +14,52 @@
 <nav class="clearfix">  
 	
     <ul class="clearfix">  
-        <li><a href="#hello">Hello</a></li>  
-        <li><a href="#vision">Our Vision</a></li>  
-        <li><a href="#stuff">Our Stuff</a></li>  
-        <li><a href="#team">The Team</a></li>  
-        <li><a href="#contact">Contact Us</a></li>    
+        <li><a href="#hello" data-menu-top="250">Hello</a></li>  
+        <li><a href="#vision" data-menu-top="600">Our Vision</a></li>  
+        <li><a href="#stuff" data-menu-top="1200">Our Stuff</a></li>  
+        <li><a href="#team" data-menu-top="1800">The Team</a></li>  
+        <li><a href="#contact" data-menu-top="2200">Contact Us</a></li>    
     </ul>  
     <span id="logo">XeQt</span>
 	<div style="padding-top:20px">
     <a href="#" id="pull">Menu</a>  </div>
 </nav>  
-
+<div id="skrollr-body">
 <section id="front">
 
-<blockquote>Do More With Less</blockquote>
+<blockquote data-0="opacity:1" data-200="opacity:0">Do More With Less</blockquote>
 <div id="share">
-<a href=# class="social" style="background-image:url(images/facebook-icon.png)"></a>
-<a href=# class="social" style="background-image:url(images/linkedin-icon.png)"></a>
-<a href=# class="social" style="background-image:url(images/google-plus-icon.png)"></a>
+<a href=# class="social" style="background-image:url(images/facebook-icon.png)" data-0="opacity:1;" data-200="opacity:0;"></a>
+<a href=# class="social" style="background-image:url(images/linkedin-icon.png)" data-0="opacity:1; top:0" data-200="top:400px;opacity:0;"></a>
+<a href=# class="social" style="background-image:url(images/google-plus-icon.png)"data-0="opacity:1; top:0;" data-200= "top:-400px; opacity:0;"></a>
 </div>
 </section>
 
-<section id="hello" class="content">
+<section id="hello" class="content" data-0="top:100%;" data-500="top:-100%;">
 <h2 class="heading">Hello</h2>
 <p>
 XeQt is a group of 2nd generation technology developers whose motto, "Do More With Less" drives every decision, design and deployment mechanism of a group of highly skilled engineers. XeQt is based in and operates from Kolkata, India. We are strong promoters of open-source technology, minimalistic designs and the belief that great isn't good enough. With XeQt, you can always expect to be surprised.
 </p>
 </section>
-<section id="vision" class="content">
+<section id="vision" class="content" data-0="top:100%" data-600="top:0%;">
 <h2 class="heading">Our Vision</h2>
 <p>
  A couple of years back, two students, sitting through a boring class at college, had an idea that would be both fun and innovative, and would also shape their lives in the days to come. And XeQt was born out of that idea. From a web design startup, today we have branched into core hardware development, app development, software design, tutorials, social media and marketing and have even bigger plans in the days to come. It is really very exciting, and we can hardly wait to get started.
 </p>
 </section>
 
-<section class="content" id="stuff">
+<section class="content" id="stuff" data-600="top:100%" data-1800="top:-150%">
 <h2 class="heading">Our Stuff</h2>
 <div id="stage">
-  <img class="frames" src="images/renderbit.svg" onclick="window.open('http://www.renderbit.com')"></img>
-  <img class="frames" src="images/cryllsoft.png" onclick="window.open('http://www.cryllsoft.com')"></img>
+  <img class="frames" src="images/renderbit.svg" onclick="window.open('http://www.renderbit.com')" data-600="left:-100%" data-1200="left:0"></img>
+  <img class="frames" src="images/cryllsoft.png" onclick="window.open('http://www.cryllsoft.com')" data-600="right:-100%" data-1200="right:0"></img>
  <br />
-  <img class="frames" src="images/geeky.svg" onclick="window.open('http://www.geekyhardware.com')"></img>
-  <img class="frames" src="images/techdcode.svg" onclick="window.open('http://www.techdcode.com')"></img>
+  <img class="frames" src="images/geeky.svg" onclick="window.open('http://www.geekyhardware.com')" data-600="left:-100%" data-1200="left:0"></img>
+  <img class="frames" src="images/techdcode.svg" onclick="window.open('http://www.techdcode.com')" data-600="right:-100%" data-1200="right:0"></img>
   </div>
 </section>
 
-<!--<section id="team" class="content">
-		<h2 class="heading" >Meet the team</h2>
-        <div class="m-carousel m-fluid m-carousel-photos">
-  <div class="m-carousel-inner">
-      <a class="m-item" href="#">
-      <img src="images/soham.jpg">
-      <p class="m-caption"><strong>Soham Banerjee</strong><br>Chief Executive Officer<span> &gt; </span></p>
-      </a>
-      <a class="m-item" href="#">
-      <img src="images/shinjan.jpg">
-      <p class="m-caption"><strong>Shinjan Mitra</strong><br>Chief Technical Officer (Web Design)<span> &gt; </span></p>
-      </a>
-      <a class="m-item" href="#">
-      <img src="images/shashwata.jpg">
-      <p class="m-caption"><strong>Shashwata Gupta</strong><br>Chief Technical Officer (Tutorials)<span> &gt; </span></p>
-      </a>
-      <a class="m-item" href="#">
-      <img src="images/susmit.jpg">
-      <p class="m-caption"><strong>Susmit Bhattacharya</strong><br>Chief Technical Officer (Hardware)<span> &gt; </span></p>
-      </a>
-      <a class="m-item" href="#">
-      <img src="images/diptesh.jpg">
-      <p class="m-caption"><strong>Diptesh Sil</strong><br>Chief Technical Officer (Software)<span> &gt; </span></p>
-      </a>
-      <a class="m-item" href="#">
-      <img src="images/anirban.jpg">
-      <p class="m-caption"><strong>Anirban Sinha</strong><br>Chief Marketing Officer<span> &gt; </span></p>
-      </a>
-  </div>
-</div>
-</section>-->
-<section id="team" class="content">
+<section id="team" class="content" data-600="top:100%" data-1800="top:0">
 <h2 class="heading" >Meet the team</h2>
 	<div id="team-wrapper" class="owl-carousel">
 			<div class="large-4 columns">
@@ -121,7 +90,7 @@ XeQt is a group of 2nd generation technology developers whose motto, "Do More Wi
             </div>
 </section>
 
-<section id="contact" class="content">
+<section id="contact" class="content" data-1800="top:100%" data-2200="top:0">
     <h2 class="heading">Reach Out to Us</h2>
     <div id="contact-wrapper">
     <div id="map" class="contact-elements">
@@ -136,7 +105,7 @@ XeQt is a group of 2nd generation technology developers whose motto, "Do More Wi
         </ul>
     </div>
 </section>
-
+</div>
 <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {  
@@ -188,14 +157,34 @@ $(window).resize(function(){
 	   $('#stuff').height(fh+500);
   });
   
-  
+/*  
   $('a').not('#pull').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     return false;
-});
+});*/
 </script>
 <script src="owl-carousel/owl.carousel.min.js"></script>
+<!--<script src="js/data.js" type="text/javascript"></script>-->
+<script src="js/skrollr.min.js" type="text/javascript" ></script>
+<script src="js/skrollr.menu.min.js" ></script>
+<script src="js/detectmobilebrowser.js" ></script>
+<script type="text/javascript">
+var s=skrollr.init();
+if(jQuery.browser.mobile)
+{
+	s.destroy();
+	$('.content').css("position","static");
+	  $('a').not('#pull').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+	  });
+}
+else
+skrollr.menu.init(s);
+</script>
 </body>
 </html>
